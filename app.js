@@ -33,6 +33,16 @@ function checker(){
         }
     }
 }
+function drawfinder(){
+    let count =0;
+    for(let i=0;i<9;i++){
+        if(boxes[i].innerText=="X" || boxes.innerText=="O") count++;
+    }
+    if(count == 9){
+            msg.innerText='Game is Draw';
+            msgcon.classList.remove("hide");
+    }
+}
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turn==true){
