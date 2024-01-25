@@ -55,6 +55,7 @@ boxes.forEach((box)=>{
         }
         box.disabled=true;
         checker();
+        drawfinder();
     });
 });
 
